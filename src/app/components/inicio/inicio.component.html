@@ -1,0 +1,69 @@
+<h1>Cartelera Caracas</h1>
+
+<p>Buscar por nombre</p>
+<form action="">
+    <input type="text" placeholder="Nombre">
+    <input type="submit" name="" id="">
+</form>
+
+<!-- <div class="peliculas">
+    <div class="pelicula" *ngFor="let pelicula of peliculas">
+        <div class="thumb">
+            <img src="{{pelicula.Poster}}" alt="">
+        </div>
+        <div class="info">
+            <h3>{{pelicula.Title}}</h3>
+            <ul class="generos">
+                <li>{{pelicula.Genre[0]}}</li>
+                <li>{{pelicula.Genre[1]}}</li>
+                <li>{{pelicula.Genre[2]}}</li>
+            </ul>
+            <h4>Iidiomas: {{pelicula.Language}}, Suajili</h4>
+            <a href="">Ver Detalles</a>
+        </div>
+        
+    </div>
+</div> -->
+
+<div class="peliculas">
+    <div class="pelicula" *ngFor="let pelicula of peliculas">
+        <div class="peliculas-container" *ngIf="pelicula.Available">
+            <div class="thumb" >
+                <img src="{{pelicula.Poster}}" alt="">
+            </div>
+            <div class="info" >
+                <h3>{{pelicula.Title}}</h3>
+                <ul class="generos">
+                    <li>{{pelicula.Genre[0]}}</li>
+                    <li>{{pelicula.Genre[1]}}</li>
+                    <li>{{pelicula.Genre[2]}}</li>
+                </ul>
+                <h4>Iidiomas: {{pelicula.Language}}, Suajili</h4>
+                <a href="">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Proximos estrenos</h2>
+<div class="peliculas coming-soon">
+    <div class="peliculas">
+        <div class="pelicula" *ngFor="let pelicula of peliculas">
+            <div class="peliculas-container" *ngIf="pelicula.ComingSoon">
+                <div class="thumb" >
+                    <img src="{{pelicula.Poster}}" alt="">
+                </div>
+                <div class="info" >
+                    <h3>{{pelicula.Title}}</h3>
+                    <ul class="generos">
+                        <li>{{pelicula.Genre[0]}}</li>
+                        <li>{{pelicula.Genre[1]}}</li>
+                        <li>{{pelicula.Genre[2]}}</li>
+                    </ul>
+                    <h4>Iidiomas: {{pelicula.Language}}, Suajili</h4>
+                    <a href="">Ver Detalles</a>
+                </div>
+            </div>
+            </div>
+        </div>
+</div>

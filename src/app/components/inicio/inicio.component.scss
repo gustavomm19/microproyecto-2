@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+// .peliculas{
+//     margin-top: 40px;
+//     display: flex;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
+//     .pelicula{
+//         margin: 50px;
+//         .thumb{
+//             width:250px;
+//             img{
+//                 width: 100%;
+//             }
+//         }
+//         .info{
+//             ul{
+//                 list-style: none;
+//             }
+//         }
+//     }
+    
+// }
+
+.peliculas{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .pelicula{
+        
+        .peliculas-container{
+            width: 100%;
+            max-width: 250px;
+            margin:50px;
+            .thumb{
+                width:250px;
+                img{
+                    width: 100%;
+                }
+            }
+            .info{
+                ul{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
