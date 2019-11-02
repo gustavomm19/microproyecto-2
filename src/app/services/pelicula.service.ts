@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Pelicula } from '../models/pelicula-model';
 import { PELICULAS } from '../services/mock-peliculas'
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 
 
 @Injectable({
