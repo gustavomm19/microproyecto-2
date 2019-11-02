@@ -1,57 +1,50 @@
-h1{
-    text-align: center;
-    margin-top: 30px;
-}
+
 h2{
     text-align: center;
     margin-top: 30px;
 }
 
 
-// .peliculas{
-//     margin-top: 40px;
-//     display: flex;
-//     justify-content: space-around;
-//     flex-wrap: wrap;
-//     .pelicula{
-//         margin: 50px;
-//         .thumb{
-//             width:250px;
-//             img{
-//                 width: 100%;
-//             }
-//         }
-//         .info{
-//             ul{
-//                 list-style: none;
-//             }
-//         }
-//     }
-    
-// }
 
-.peliculas{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    .pelicula{
-        
-        .peliculas-container{
-            width: 100%;
-            max-width: 250px;
-            margin:50px;
-            .thumb{
-                width:250px;
-                img{
-                    width: 100%;
+
+.cartelera{
+    background: #1E1E21;
+    padding-top: 20px;
+    .filtro{
+        p{
+            color: #FFF;
+        }
+        text-align: center;
+    }
+    .peliculas{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .pelicula{
+
+            .peliculas-container{
+                width: 100%;
+                max-width: 250px;
+                margin:50px;
+                color:#000;
+                text-align: center;
+                .thumb{
+                    width:250px;
+                    max-height: 370px;
+                    img{
+                        width: 100%;
+                        max-height: 370px;
+                    }
                 }
-            }
-            .info{
-                ul{
-                    list-style: none;
+                .info{
+                    background: #7E7E8A;
+                    ul{
+                        list-style: none;
+                    }
                 }
             }
         }
     }
 }
+

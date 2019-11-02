@@ -7,12 +7,14 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { HeaderComponent } from './components/header/header.component';
  
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
